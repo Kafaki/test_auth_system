@@ -1,0 +1,208 @@
+[
+{
+  "model": "core.role",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-11-06T00:00:00Z",
+    "updated_at": "2025-11-06T00:00:00Z",
+    "name": "admin",
+    "description": "Администратор системы"
+  }
+},
+{
+  "model": "core.role",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-11-06T00:00:00Z",
+    "updated_at": "2025-11-06T00:00:00Z",
+    "name": "manager",
+    "description": "Менеджер (работа с заказами и товарами)"
+  }
+},
+{
+  "model": "core.role",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-11-06T00:00:00Z",
+    "updated_at": "2025-11-06T00:00:00Z",
+    "name": "user",
+    "description": "Обычный пользователь (работает только со своими объектами)"
+  }
+},
+{
+  "model": "core.role",
+  "pk": 4,
+  "fields": {
+    "created_at": "2025-11-06T00:00:00Z",
+    "updated_at": "2025-11-06T00:00:00Z",
+    "name": "guest",
+    "description": "Гость (без доступа)"
+  }
+},
+{
+  "model": "core.businesselement",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-11-06T00:00:00Z",
+    "updated_at": "2025-11-06T00:00:00Z",
+    "name": "users",
+    "description": "Управление пользователями"
+  }
+},
+{
+  "model": "core.businesselement",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-11-06T00:00:00Z",
+    "updated_at": "2025-11-06T00:00:00Z",
+    "name": "products",
+    "description": "Товары магазина"
+  }
+},
+{
+  "model": "core.businesselement",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-11-06T00:00:00Z",
+    "updated_at": "2025-11-06T00:00:00Z",
+    "name": "orders",
+    "description": "Заказы покупателей"
+  }
+},
+{
+  "model": "core.accessrolerule",
+  "pk": 1,
+  "fields": {
+    "created_at": "2025-11-06T12:00:00Z",
+    "updated_at": "2025-11-06T12:00:00Z",
+    "role": 1,
+    "element": 1,
+    "read_permission": true,
+    "read_all_permission": true,
+    "create_permission": true,
+    "update_permission": true,
+    "update_all_permission": true,
+    "delete_permission": true,
+    "delete_all_permission": true
+  }
+},
+{
+  "model": "core.accessrolerule",
+  "pk": 2,
+  "fields": {
+    "created_at": "2025-11-06T12:00:00Z",
+    "updated_at": "2025-11-06T12:00:00Z",
+    "role": 2,
+    "element": 1,
+    "read_permission": true,
+    "read_all_permission": true,
+    "create_permission": true,
+    "update_permission": true,
+    "update_all_permission": true,
+    "delete_permission": false,
+    "delete_all_permission": false
+  }
+},
+{
+  "model": "core.accessrolerule",
+  "pk": 3,
+  "fields": {
+    "created_at": "2025-11-06T12:00:00Z",
+    "updated_at": "2025-11-06T12:00:00Z",
+    "role": 3,
+    "element": 1,
+    "read_permission": true,
+    "read_all_permission": false,
+    "create_permission": false,
+    "update_permission": false,
+    "update_all_permission": false,
+    "delete_permission": false,
+    "delete_all_permission": false
+  }
+},
+{
+  "model": "core.accessrolerule",
+  "pk": 4,
+  "fields": {
+    "created_at": "2025-11-06T12:00:00Z",
+    "updated_at": "2025-11-06T12:00:00Z",
+    "role": 4,
+    "element": 1,
+    "read_permission": false,
+    "read_all_permission": false,
+    "create_permission": false,
+    "update_permission": false,
+    "update_all_permission": false,
+    "delete_permission": false,
+    "delete_all_permission": false
+  }
+},
+{
+  "model": "core.accessrolerule",
+  "pk": 5,
+  "fields": {
+    "created_at": "2025-11-06T12:00:00Z",
+    "updated_at": "2025-11-06T12:00:00Z",
+    "role": 1,
+    "element": 2,
+    "read_permission": true,
+    "read_all_permission": true,
+    "create_permission": true,
+    "update_permission": true,
+    "update_all_permission": true,
+    "delete_permission": true,
+    "delete_all_permission": true
+  }
+},
+{
+  "model": "core.accessrolerule",
+  "pk": 6,
+  "fields": {
+    "created_at": "2025-11-06T12:00:00Z",
+    "updated_at": "2025-11-06T12:00:00Z",
+    "role": 2,
+    "element": 2,
+    "read_permission": true,
+    "read_all_permission": true,
+    "create_permission": true,
+    "update_permission": true,
+    "update_all_permission": false,
+    "delete_permission": false,
+    "delete_all_permission": false
+  }
+},
+{
+  "model": "core.accessrolerule",
+  "pk": 7,
+  "fields": {
+    "created_at": "2025-11-06T12:00:00Z",
+    "updated_at": "2025-11-06T12:00:00Z",
+    "role": 3,
+    "element": 2,
+    "read_permission": true,
+    "read_all_permission": false,
+    "create_permission": true,
+    "update_permission": true,
+    "update_all_permission": false,
+    "delete_permission": false,
+    "delete_all_permission": false
+  }
+},
+{
+  "model": "core.accessrolerule",
+  "pk": 8,
+  "fields": {
+    "created_at": "2025-11-06T12:00:00Z",
+    "updated_at": "2025-11-06T12:00:00Z",
+    "role": 4,
+    "element": 2,
+    "read_permission": true,
+    "read_all_permission": false,
+    "create_permission": false,
+    "update_permission": false,
+    "update_all_permission": false,
+    "delete_permission": false,
+    "delete_all_permission": false
+  }
+}
+]
