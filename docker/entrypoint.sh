@@ -7,7 +7,6 @@ done
 echo " Postgres доступен"
 
 python manage.py migrate --noinput
-python manage.py collectstatic --noinput || true
 
 
 python manage.py loaddata core/fixtures/core_data.json || true
