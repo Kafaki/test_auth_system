@@ -1,14 +1,9 @@
-from django.shortcuts import get_object_or_404
 from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from core.mixins import AccessControlMixin
-from users.models import User
-
 from .mixins import BaseJWTAPIView
-from .serializers import (AdminUserCreateSerializer, AdminUserUpdateSerializer,
-                          ChangePasswordSerializer, LoginSerializer,
+from .serializers import (ChangePasswordSerializer, LoginSerializer,
                           ProfileSerializer, RegisterSerializer)
 from .utils import create_jwt_token
 
